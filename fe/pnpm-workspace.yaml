@@ -1,0 +1,9 @@
+# pnpm-workspace.yaml defines the root of the workspace and enables you to include / exclude directories from the workspace.
+# By default, all packages of all subdirectories are included.
+# The root package is always included, even when custom location wildcards are used.
+
+packages:
+  # all packages in direct subdirs of packages/
+  - "packages/*"
+  # exclude packages that are inside test directories
+  - "!**/test/**"

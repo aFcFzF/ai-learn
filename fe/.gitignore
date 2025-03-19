@@ -1,0 +1,10 @@
+node_modules/
+/packages/*/lib
+/packages/*/es
+/packages/*/dist
+/packages/*/css
+coverage/
+dist/
+yarn-error.log
+.DS_Store
+lerna-debug.log
