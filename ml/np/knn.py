@@ -33,7 +33,7 @@ def classify(in_x: list[int], datas: np.ndarray, labels, k):
     sorted_class_count = sorted(class_count.items(), key=operator.itemgetter(1), reverse=True)
     return sorted_class_count[0][0]
 
-target = [4, 17];
+target = [12, 0];
 result = classify(target, group, labels, 3)
 
 print(result)
@@ -48,4 +48,3 @@ for i, val in enumerate(labels):
 plt.scatter(target[0], target[1], s=50, c='b', marker='X')
 
 plt.show()
-
