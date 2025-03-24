@@ -17,6 +17,10 @@ def createDataset():
 
 group, labels = createDataset()
 
+"""
+in_x: 表示目标指标集合
+datas: np数据集
+"""
 def classify(in_x: list[int], datas: np.ndarray, labels, k):
     # 将数据重复几遍
     data_size = datas.shape[0]
