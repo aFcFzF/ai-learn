@@ -43,3 +43,39 @@ def evaluate(test_data, net):
                 n_total += 1
 
     return n_correct / n_total
+
+def main():
+    train_data = get_data_loader(is_train=True)
+    test_data = get_data_loader(is_train=False)
+    net = Net()
+    
+    print("initial accuracy:", evaluate(test_data, net))
+    optimizer = torch.optim.Adam(net.parameters(), lr=0.001)
+    # 训练轮次
+    for epoch in range(2):
+        # pytorch模板代码
+        for (x, y) in train_data:
+            # 初始化
+            net.zero_grad()
+            # 正向传播
+            output = net.forward(x.view(-1, 28*28))
+            # 计算损失
+            loss = torch.nn.functional.nll_loss(output, y)
+            # 反向误差传播
+            loss.backward()
+            # 优化网络参数
+            optimizer.step()
+        print("epoch", epoch, "accuracy:", evaluate(test_data, net))
+
+    for (n, (x, _)) in enumerate(test_data):
+        if n > 3:
+            break
+        predict = torch.argmax(net.forward(x[0].view(-1, 28*28)))
+        plt.figure(n)
+        plt.imshow(x[0].view(28, 28))
+        plt.title("prediction: " + str(int(predict)))
+    plt.show()
+
+
+if __name__ == "__main__":
+    main()
