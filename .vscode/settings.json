@@ -2,5 +2,15 @@
   "psi-header.variables": [
     ["author", "afcfzf"],
     ["authoremail", "9301462@qq.com"]
-  ]
+  ],
+  "psi-header.templates": [
+    {
+      "language": "*",
+      "template": ["@file <<filename>>", "@author <<author>>(<<authoremail>>)"]
+    }
+  ],
+  "cSpell.words": [
+    "keepdims",
+    "randn"
+  ],
 }
