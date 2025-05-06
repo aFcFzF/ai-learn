@@ -11,6 +11,8 @@
   ],
   "cSpell.words": [
     "keepdims",
-    "randn"
+    "ndarray",
+    "randn",
+    "rint"
   ],
 }
