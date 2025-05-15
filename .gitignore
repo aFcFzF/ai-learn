@@ -6,3 +6,5 @@ runs/detect
 X-AnyLabeling
 __pycache__
 .egg-info
+share/yolo-train/runs
+.
