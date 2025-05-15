@@ -1,0 +1,7 @@
+README.md
+main.py
+pyproject.toml
+play.egg-info/PKG-INFO
+play.egg-info/SOURCES.txt
+play.egg-info/dependency_links.txt
+play.egg-info/top_level.txt
