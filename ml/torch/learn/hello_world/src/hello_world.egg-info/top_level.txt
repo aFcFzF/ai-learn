@@ -1,0 +1,8 @@
+FashionMNIST
+MNIST
+board
+data_show
+hand_write_model
+main
+score
+train

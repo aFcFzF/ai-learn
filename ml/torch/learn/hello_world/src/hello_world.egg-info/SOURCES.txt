@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/board.py
+src/data_show.py
+src/hand_write_model.py
+src/main.py
+src/score.py
+src/train.py
+src/hello_world.egg-info/PKG-INFO
+src/hello_world.egg-info/SOURCES.txt
+src/hello_world.egg-info/dependency_links.txt
+src/hello_world.egg-info/requires.txt
+src/hello_world.egg-info/top_level.txt

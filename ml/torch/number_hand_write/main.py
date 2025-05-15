@@ -1,4 +1,9 @@
 
+'''
+@file main.py
+@author afcfzf(9301462@qq.com)
+'''
+
 import torch
 from torch.utils.data import DataLoader
 from torchvision import transforms
