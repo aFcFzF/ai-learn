@@ -1,6 +1,6 @@
-path: /Volumes/work/code/personal/ai-learn/share/yolo-train
-train: images/train
-val: images/val
+train: dataset/images/train
+val: dataset/images/val
 # test: verify-ui
 nc: 1
 names: ["mole"]
+# save_dir: ./train-result  # 所有实验的根目录
