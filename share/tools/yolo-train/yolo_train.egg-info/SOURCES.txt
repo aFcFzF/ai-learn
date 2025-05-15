@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+yolo_train.egg-info/PKG-INFO
+yolo_train.egg-info/SOURCES.txt
+yolo_train.egg-info/dependency_links.txt
+yolo_train.egg-info/top_level.txt
